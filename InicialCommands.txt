@@ -4,6 +4,7 @@
 
 
 -- These commands prepare your recentle installed git to run in Windows
+-- https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git
 git config --global user.name "Your Name"
 git config --global user.ema "Your E-mail"
 
