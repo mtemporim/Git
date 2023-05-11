@@ -1,0 +1,11 @@
+-- Git URL https://git-scm.com/
+-- Here is some inicials  commands about Git 
+-- After intall Git there is some commands to run 
+
+
+-- These commands prepare your recentle installed git to run in Windows
+git config --global user.name "Your Name"
+git config --global user.ema "Your E-mail"
+
+
+
