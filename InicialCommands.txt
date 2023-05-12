@@ -82,13 +82,22 @@ Date:   Thu May 11 15:47:06 2023 -0300                                          
 -- git push - Send the commited operations to repository in internet 
 git push origin main
 
--- Change the name "master" of branch to "main" 
+-- git branch - Change the name "master" of branch to "main" 
 git branch -M main
 
--- Link a local git repository directory to a remote repository
+-- git remote - Link a local git repository directory to a remote repository
 git remote add origim <URL>
 
 
+-- git branch - It show all branchs in repository and what branch is 
+git branch
 
+-- git branch - It create a new branch called NewBranch from main branch 
+git branch NewBranch
+
+-- git checkout - It Access the new branch recently created 
+git checkout NewBranch
+
+-- git merge - it permit to merge the update of one branch to another 
 
 
