@@ -75,11 +75,20 @@ commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, orig
 Author: Author Name  <e-mail Author>                                                         -- Who made a commit and e-mail 
 Date:   Thu May 11 15:47:06 2023 -0300                                                       -- Timestamp anda UTC 
 
-    Create file.txt                                                                          -- Commit title   
+    Create file.txt                                                                          -- Title commit    
 
-    Creating a file with primary information with a link to the documentation and some infor -- Commit description
+    Creating a file with primary information with a link to the documentation and some infor -- Description commit 
 
 -- git push - Send the commited operations to repository in internet 
 git push origin main
+
+-- Change the name "master" of branch to "main" 
+git branch -M main
+
+-- Link a local git repository directory to a remote repository
+git remote add origim <URL>
+
+
+
 
 
