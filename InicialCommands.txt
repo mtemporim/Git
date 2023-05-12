@@ -28,7 +28,7 @@ git init (name of repositoty)
 -- git clone - Clone/copy an existing repository
 git clone (url)
 
--- git status - It show information about staging area (Remember that the staging area is a place between the work área and the area that the repository is saved)
+-- git status - It show information about staging area (Remember that the staging area is a place between the work area and the area that the repository is saved)
 git status 
 
 On branch main                                                            -- Local 
@@ -49,7 +49,7 @@ no changes added to commit (use "git add" and/or "git commit -a")         -- It 
 -- git add - Add a file to the staging area
 git add (name off file)
 
--- git add - Add all update was made or something that was add in all work/index área 
+-- git add - Add all update was made or something that was add in all work/index area 
 git add . 
 
 -- git status "after git add" - In git status case above, after run "git add directory 1/test1.txt" and "git add test2.txt" or "git add ." , if run git status again will be show this way
@@ -63,7 +63,7 @@ Changes to be committed:                              -- Info about update that 
         modified:   directory1/file1.txt              -- It show info about what happened with this item, in this case was update the file1.txt inside directory1
         new file:   test2.txt                        -- It show info about what happened with this item, in this case create new file in branch main
 
--- git commit - Get all the updates/adds that was in staging área to be versionaized and efectively insert this update in repository
+-- git commit - Get all the updates/adds that was in staging area to be versionaized and efectively insert this update in repository
 git commit -m "Description of your commit"
 
 -- git commit - If you remove "-m" option, you have to insert the commit description on your git bash or other command interpreter/IDE 
