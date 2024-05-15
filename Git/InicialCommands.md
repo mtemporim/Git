@@ -1,9 +1,13 @@
 [<-- Back to Git](https://github.com/mtemporim/Git-And-Github/tree/main/Git)  
+
 # Here is some inicials commands about Git.  
+
 ## After intall Git there is some commands to run.    
+
 >[!NOTE]
 >
 >These commands prepare your recently installed git to run in Windows  
+
 ### On Git Bash - Set name and e-mail   
 ```bash
 git config --global user.name "Your Name"
@@ -11,17 +15,15 @@ git config --global user.name "Your Name"
 ```bash
 git config --global user.ema "Your E-mail"
 ```
-[References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)      
+[References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)  
+
+
 ### On Visual Studio Code
 
 If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
 
-Access the "**File**" menu 
---> "**Preferences**" 
---> "**Settings**"
-
+Access the "**File**" menu --> "**Preferences**" --> "**Settings**"  
 Click "**Open Settings (JASON)**" in the upper right corner near "..." and add the following lines in the settings.json file:
-
 ```json
 "terminal.integrated.defaultProfile.windows": "Git Bash",
 "terminal.integrated.tabs.enabled": true,
