@@ -2,7 +2,7 @@
 
 # How to create a new repository from a local directory and sinchornize with GitHub  
 
-Create a new folder that will be a branch main of repository  
+## Create a new folder that will be a branch main of repository  
 
 Git Bash in Windows  
 ```bash
@@ -53,8 +53,7 @@ Change the name "master" of branch to "main"
 git branch -M main
 ```
 
-Create a repository "NewRepository" in Github without the option "Add a README file" on the web an get the URL
-
+## Create a repository "NewRepository" in Github without the option "Add a README file" on the web an get the URL
 
 Link a local git repository directory to a remote repository
 ```bash
