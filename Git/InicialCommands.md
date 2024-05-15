@@ -45,8 +45,7 @@ When you click on the terminal, the "Git Bash" interpreter will open
 
 ## Follow some GIT commands 
 
-Initializes a new empty repository or reinitialize an existing one
-
+**git init** - Initializes a new empty repository or reinitialize an existing one
 Initialize empty
 ```bash
 git init 
@@ -56,14 +55,14 @@ Reinitialize
 git init (name of repositoty) 
 ```
 
-Clone/copy an existing repository
+**git clone** - Clone/copy an existing repository
 ```bash
 git clone (url)
 ```
 
-Show information about staging area (Remember that the staging area is a place between the work area and the area that the repository is saved)
+**git status** - Show information about staging area (Remember that the staging area is a place between the work area and the area that the repository is saved)
 ```bash
-git status 
+git status
 ```
 **On branch main**     *--Local*  
 **Your branch is up to date with 'origin/main'.**     *--It inform that occurred updates in branch main*  
@@ -77,7 +76,7 @@ git status
 **test2.txt**     *--It show that was create a file called test2.txt in a branch main*  
 **no changes added to commit (use "git add" and/or "git commit -a")**     *--It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated*  
 
-Add a file to the staging area
+**git add** - Add a file to the staging area
 ```bash
 git add (name off file)
 ```
@@ -88,24 +87,16 @@ git add .
 
 git status "after git add" - In git status case above, after run "git add directory 1/test1.txt" and "git add test2.txt" or "git add ." , if run git status again will be show this way
 
-**On branch main**
-*Local* 
-**Your branch is up to date with 'origin/main'.**
-*It inform that occurred updates in main branch* 
-
-**Changes to be committed:**
-*Info about update that should be committed*
-  **(use "git restore --staged <file>..." to unstage)**
-  *Suggestion about what that can be made with git commands in case should remove itens of staging area*
-        **new file:   directory1/test1.txt**
-        *It show info about what happened with this item, in this case create a new file insine a directory1 in branch main*
-        **modified:   directory1/file1.txt**
-        *It show info about what happened with this item, in this case was update the file1.txt inside directory1*
-        **new file:   test2.txt**
-        *It show info about what happened with this item, in this case create new file in branch main
+**On branch main**     *--Local*  
+**Your branch is up to date with 'origin/main'.**     *--It inform that occurred updates in main branch*  
+**Changes to be committed:**     *--Info about update that should be committed*  
+**(use "git restore --staged <file>..." to unstage)**     *--Suggestion about what that can be made with git commands in case should remove itens of staging area*  
+**new file:   directory1/test1.txt**     *--It show info about what happened with this item, in this case create a new file insine a directory1 in branch main*  
+**modified:   directory1/file1.txt**     *--It show info about what happened with this item, in this case was update the file1.txt inside directory1*  
+**new file:   test2.txt**     *--It show info about what happened with this item, in this case create new file in branch main  
 
 
-Get all the updates/adds that was in staging area to be versionaized and efectively insert this update in repository
+**git commit** - Get all the updates/adds that was in staging area to be versionaized and efectively insert this update in repository
 ```bash
 git commit -m "Description of your commit"
 ```
@@ -114,46 +105,39 @@ If you remove "-m" option, you have to insert the commit description on your git
 git commit
 ```
 
-Show informations about all the commits that was made in your repository 
+**git log** - Show informations about all the commits that was made in your repository 
 ```bash
 git log
 ```
 Example
-**commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, origin/HEAD)**
-*Commit code and the place in repository where the commit occured*
-**Author: Author Name  <e-mail Author>**
-*Who made a commit and e-mail*
-**Date:   Thu May 11 15:47:06 2023 -0300**
-*Timestamp and UTC*
+**commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, origin/HEAD)**     *--Commit code and the place in repository where the commit occured*  
+**Author: Author Name  <e-mail Author>**     *--Who made a commit and e-mail*  
+**Date:   Thu May 11 15:47:06 2023 -0300**     *--Timestamp and UTC*  
+**Create file.txt**     *--Title commit*  
+**Creating a file with primary information with a link to the documentation and some infor**     *Description commit*  
 
-   **Create file.txt**
-   *Title commit*
 
-   **Creating a file with primary information with a link to the documentation and some infor** 
-   *Description commit* 
-
-Send the commited operations to repository in internet 
+**git push** - Send the commited operations to repository in internet 
 ```bash
 git push origin main
+```
+**git branch** - It show all branchs in repository and what branch is 
+```bash
+git branch
 ```
 Change the name "master" of branch to "main" 
 ```bash
 git branch -M main
 ```
-Link a local git repository directory to a remote repository
-```bash
-git remote add origim <URL>
-```
-It show all branchs in repository and what branch is 
-```bash
-git branch
-```
 It create a new branch called NewBranch from main branch 
 ```bash
 git branch NewBranch
 ```
-
-It Access the new branch recently created 
+**git remote** - Link a local git repository directory to a remote repository
+```bash
+git remote add origim <URL>
+```
+**git checkout** - It Access the new branch recently created 
 ```bash
 git checkout NewBranch
 ```
