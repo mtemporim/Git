@@ -66,26 +66,16 @@ Show information about staging area (Remember that the staging area is a place b
 git status 
 ```
 **On branch main**     *--Local*  
-**Your branch is up to date with 'origin/main'.**     *--It inform that occurred updates in branch main*
-
-**Changes not staged for commit:**     *--Info about update that not in staging area yeat*
-
-**(use "git add <file>..." to update what will be committed)**     *--Suggestion about what that can be made with git commands in case was a file added* 
-
-**(use "git restore <file>..." to discard changes in working directory)**     *--Suggestion about what that can be made with git commands in case should discard updates* 
-
-**modified:   directory1/file1.txt**     *--List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case* 
-
-**Untracked files:**     *--List of items added in repository that was made but not add in staging area yeat* 
-
-**(use "git add <file>..." to include in what will be committed)**     *--Info that suggest what should have make with this updates, that is, Should be added in the staging area* 
-
-**directory1/test1.txt**     *--It show that was create a file called teste1.txt inside a directory called directory1* 
-
-**test2.txt**     *--It show that was create a file called test2.txt in a branch main* 
-
-**no changes added to commit (use "git add" and/or "git commit -a")**     *--It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated* 
-
+**Your branch is up to date with 'origin/main'.**     *--It inform that occurred updates in branch main*  
+**Changes not staged for commit:**     *--Info about update that not in staging area yeat*  
+**(use "git add <file>..." to update what will be committed)**     *--Suggestion about what that can be made with git commands in case was a file added*  
+**(use "git restore <file>..." to discard changes in working directory)**     *--Suggestion about what that can be made with git commands in case should discard updates*  
+**modified:   directory1/file1.txt**     *--List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case*  
+**Untracked files:**     *--List of items added in repository that was made but not add in staging area yeat*  
+**(use "git add <file>..." to include in what will be committed)**     *--Info that suggest what should have make with this updates, that is, Should be added in the staging area*  
+**directory1/test1.txt**     *--It show that was create a file called teste1.txt inside a directory called directory1*  
+**test2.txt**     *--It show that was create a file called test2.txt in a branch main*  
+**no changes added to commit (use "git add" and/or "git commit -a")**     *--It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated*  
 
 Add a file to the staging area
 ```bash
