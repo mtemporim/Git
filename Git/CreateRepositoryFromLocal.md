@@ -1,42 +1,68 @@
--- How to create a new repository from a local directory and sinchornizein with GitHub
- 
--- Create a new folder that will be a branch main of repository 
+[<-- Back to Git](https://github.com/mtemporim/Git-And-Github/tree/main/Git)  
 
-(Git Bash in Windows)
-mkdir /directory/NewRepository 
+# How to create a new repository from a local directory and sinchornize with GitHub  
+
+Create a new folder that will be a branch main of repository  
+
+Git Bash in Windows  
+```bash
+mkdir /directory/NewRepository
+```
+```bash
 cd  /directory/NewRepository
+```
 
-(Windows cmd or PowerSheel)
+Windows cmd or PowerSheel  
+```bash
 mkdir c:/directory/NewRepository
+```
+```bash
 cd  c:/directory/NewRepository
+```
 
-(Linux) 
+Linux
+```bash
 mkdir c:/directory/NewRepository
+```
+```bash
 cd  c:/directory/NewRepository
+```
 
--- Create a REDME file 
+Create a REDME file 
+```bash
 echo "# NewRepository" >> README.md
+```
 
--- Iniciate a nem repository in folder recently created
+Iniciate a nem repository in folder recently created
+```bash
 git init 
+```
 
--- Add the files a staging area (in this case README.md)
+Add the files a staging area (in this case README.md)
+```bash
 git add . 
+```
 
--- Create a initial commit 
+Create a initial commit 
+```bash
 git commit -m "Initial commit" 
+```
 
--- Change the name "master" of branch to "main" 
+Change the name "master" of branch to "main" 
+```bash
 git branch -M main
+```
 
--- Create a repository "NewRepository" in Github without the option "Add a README file" on the web an get the URL
+Create a repository "NewRepository" in Github without the option "Add a README file" on the web an get the URL
 
 
--- Link a local git repository directory to a remote repository
+Link a local git repository directory to a remote repository
+```bash
 git remote add origim <URL>
+```
 
-
--- Synchronize the local directory repository to a remote repository
+Synchronize the local directory repository to a remote repository
+```bash
 git push -u origim main 
- 
+``` 
  
