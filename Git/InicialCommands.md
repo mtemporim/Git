@@ -21,6 +21,8 @@ git config --global user.ema "Your E-mail"
 [References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 
 
+
+
 ### On Visual Studio Code
 
 If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
@@ -41,6 +43,8 @@ When you click on the terminal, the "Git Bash" interpreter will open
 >[!CAUTION]
 >
 >This action will replace your PowerShell shell interpreter with Git Bash - make sure you want to do this
+
+
 
 
 ## Follow some GIT commands 
