@@ -21,7 +21,6 @@ git config --global user.ema "Your E-mail"
 [References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 
 
-
 ### On Visual Studio Code
 
 If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
@@ -42,7 +41,6 @@ When you click on the terminal, the "Git Bash" interpreter will open
 >[!CAUTION]
 >
 >This action will replace your PowerShell shell interpreter with Git Bash - make sure you want to do this
-
 
 
 ## Follow some GIT commands 
@@ -141,7 +139,7 @@ Example
 **Author: Author Name  <e-mail Author>**
 *Who made a commit and e-mail*
 **Date:   Thu May 11 15:47:06 2023 -0300**
-*Timestamp anda UTC*
+*Timestamp and UTC*
 
    **Create file.txt**
    *Title commit*
@@ -175,6 +173,6 @@ It Access the new branch recently created
 git checkout NewBranch
 ```
 
--- git merge - it permit to merge the update of one branch to another 
+git merge - it permit to merge the update of one branch to another 
 ```bash
 ```
