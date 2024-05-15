@@ -10,7 +10,7 @@
 >These commands prepare your recently installed git to run in Windows
 
 
-### Set name and e-mail 
+## On Git Bash - Set name and e-mail 
 
 ```bash
 git config --global user.name "Your Name"
@@ -22,7 +22,9 @@ git config --global user.ema "Your E-mail"
 
 
 
--- If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
+## On Visual Studio Code
+
+If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
 
 Access the "File" menu --> "Preferences" --> "Settings"
 Click "Open Settings (JASON)" in the upper right corner and add the following lines in the settings.json file:
