@@ -65,7 +65,7 @@ Show information about staging area (Remember that the staging area is a place b
 ```bash
 git status 
 ```
-**On branch main**     *--Local* 
+**On branch main**     *--Local*  
 **Your branch is up to date with 'origin/main'.**     *--It inform that occurred updates in branch main*
 
 **Changes not staged for commit:**     *--Info about update that not in staging area yeat*
