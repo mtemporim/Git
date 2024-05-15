@@ -1,17 +1,10 @@
-[<-- Back to Git](https://github.com/mtemporim/Git-And-Github/tree/main/Git)
-
-
-# Here is some inicials commands about Git.
-
-## After intall Git there is some commands to run.  
-
+[<-- Back to Git](https://github.com/mtemporim/Git-And-Github/tree/main/Git)  
+# Here is some inicials commands about Git.  
+## After intall Git there is some commands to run.    
 >[!NOTE]
 >
->These commands prepare your recently installed git to run in Windows
-
-
-### On Git Bash - Set name and e-mail 
-
+>These commands prepare your recently installed git to run in Windows  
+### On Git Bash - Set name and e-mail   
 ```bash
 git config --global user.name "Your Name"
 ```
