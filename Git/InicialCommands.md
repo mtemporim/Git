@@ -11,11 +11,7 @@ git config --global user.name "Your Name"
 ```bash
 git config --global user.ema "Your E-mail"
 ```
-[References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
-
-
-
-
+[References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)    
 ### On Visual Studio Code
 
 If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
