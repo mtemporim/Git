@@ -13,7 +13,7 @@
 git config --global user.name "Your Name"
 ```
 ```bash
-git config --global user.ema "Your E-mail"
+git config --global user.email "Your E-mail"
 ```
 [References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)  
 
