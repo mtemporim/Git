@@ -1,14 +1,25 @@
-[<-- Back to Git and GitHub](https://github.com/mtemporim/Git-And-Github/tree/main)
-
--- Git URL https://git-scm.com/
--- Here is some inicials commands about Git 
--- After intall Git there is some commands to run 
+[<-- Back to Git](https://github.com/mtemporim/Git-And-Github/tree/main/Git)
 
 
--- These commands prepare your recentle installed git to run in Windows
--- https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git
+# Here is some inicials commands about Git.
+
+## After intall Git there is some commands to run.  
+
+>[!IMPORTANT]
+>
+>These commands prepare your recently installed git to run in Windows
+
+
+### Set name and e-mail 
+
+```bash
 git config --global user.name "Your Name"
+```
+```bash
 git config --global user.ema "Your E-mail"
+```
+[References](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
+
 
 
 -- If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
