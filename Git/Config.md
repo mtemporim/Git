@@ -5,9 +5,9 @@
 
 **git config** - Show options of git config commands  
  I write a fews words about 3 main option  
- **--global**  Contain the configuration of all user 
- **--system**  Contain the configuration of Git system 
- **--local**   Contain the configuration of specific repository 
+ **--global**  Contain the configuration of all user  
+ **--system**  Contain the configuration of Git system  
+ **--local**   Contain the configuration of specific repository   
  
 
  Add user and e-mail for all user 
@@ -17,7 +17,7 @@ git config --global user.name "Your Name"
 ```bash
 git config --global user.email "Your E-mail"
 ```
-To show user.name and  user.email type follon 
+To show user.name and  user.email
 ```bash
 git config --global user.name 
 ```
