@@ -67,20 +67,32 @@ Show information about staging area (Remember that the staging area is a place b
 ```bash
 git status 
 ```
-On branch main                                                            *Local* 
-Your branch is up to date with 'origin/main'.                             *It inform that occurred updates in branch main*
+**On branch main**
+*Local* 
+**Your branch is up to date with 'origin/main'.**
+*It inform that occurred updates in branch main*
 
-Changes not staged for commit:                                            *Info about update that not in staging area yeat  
-  (use "git add <file>..." to update what will be committed)              *Suggestion about what that can be made with git commands in case was a file added* 
-  (use "git restore <file>..." to discard changes in working directory)   *Suggestion about what that can be made with git commands in case should discard updates*
-        modified:   directory1/file1.txt                                  *List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case* 
+**Changes not staged for commit:**
+*Info about update that not in staging area yeat  
+  **(use "git add <file>..." to update what will be committed)**
+  *Suggestion about what that can be made with git commands in case was a file added* 
+  **(use "git restore <file>..." to discard changes in working directory)**
+  *Suggestion about what that can be made with git commands in case should discard updates*
+        **modified:   directory1/file1.txt**
+        *List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case* 
 
-Untracked files:                                                          *List of items added in repository that was made but not add in staging area yeat*   
-  (use "git add <file>..." to include in what will be committed)          *Info that suggest what should have make with this updates, that is, Should be added in the staging area*
-        directory1/test1.txt                                              *It show that was create a file called teste1.txt inside a directory called directory1*   
-        test2.txt                                                         *It show that was create a file called test2.txt in a branch main*
+**Untracked files:**                                                         
+*List of items added in repository that was made but not add in staging area yeat*   
+  **(use "git add <file>..." to include in what will be committed)**
+  *Info that suggest what should have make with this updates, that is, Should be added in the staging area*
+        **directory1/test1.txt**
+        *It show that was create a file called teste1.txt inside a directory called directory1*   
+        **test2.txt**
+        *It show that was create a file called test2.txt in a branch main*
 
-no changes added to commit (use "git add" and/or "git commit -a")         *It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated*
+**no changes added to commit (use "git add" and/or "git commit -a")**
+*It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated*
+
 
 Add a file to the staging area
 ```bash
@@ -91,52 +103,78 @@ Add all update was made or something that was add in all work/index area
 git add .
 ```
 
--- git status "after git add" - In git status case above, after run "git add directory 1/test1.txt" and "git add test2.txt" or "git add ." , if run git status again will be show this way
+git status "after git add" - In git status case above, after run "git add directory 1/test1.txt" and "git add test2.txt" or "git add ." , if run git status again will be show this way
 
-On branch main                                        -- Local 
-Your branch is up to date with 'origin/main'.         -- It inform that occurred updates in main branch 
+**On branch main**
+*Local* 
+**Your branch is up to date with 'origin/main'.**
+*It inform that occurred updates in main branch* 
 
-Changes to be committed:                              -- Info about update that should be committed
-  (use "git restore --staged <file>..." to unstage)   -- Suggestion about what that can be made with git commands in case should remove itens of staging area
-        new file:   directory1/test1.txt              -- It show info about what happened with this item, in this case create a new file insine a directory1 in branch main
-        modified:   directory1/file1.txt              -- It show info about what happened with this item, in this case was update the file1.txt inside directory1
-        new file:   test2.txt                        -- It show info about what happened with this item, in this case create new file in branch main
+**Changes to be committed:**
+*Info about update that should be committed*
+  **(use "git restore --staged <file>..." to unstage)**
+  *Suggestion about what that can be made with git commands in case should remove itens of staging area*
+        **new file:   directory1/test1.txt**
+        *It show info about what happened with this item, in this case create a new file insine a directory1 in branch main*
+        **modified:   directory1/file1.txt**
+        *It show info about what happened with this item, in this case was update the file1.txt inside directory1*
+        **new file:   test2.txt**
+        *It show info about what happened with this item, in this case create new file in branch main
 
--- git commit - Get all the updates/adds that was in staging area to be versionaized and efectively insert this update in repository
+
+Get all the updates/adds that was in staging area to be versionaized and efectively insert this update in repository
+```bash
 git commit -m "Description of your commit"
-
--- git commit - If you remove "-m" option, you have to insert the commit description on your git bash or other command interpreter/IDE 
+```
+If you remove "-m" option, you have to insert the commit description on your git bash or other command interpreter/IDE 
+```bash
 git commit
+```
 
--- git log - Show informations about all the commits that was made in your repository 
--- Example
-commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, origin/HEAD)     -- Commit code and the place in repository where the commit occured
-Author: Author Name  <e-mail Author>                                                         -- Who made a commit and e-mail 
-Date:   Thu May 11 15:47:06 2023 -0300                                                       -- Timestamp anda UTC 
+Show informations about all the commits that was made in your repository 
+```bash
+git log
+```
+Example
+**commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, origin/HEAD)**
+*Commit code and the place in repository where the commit occured*
+**Author: Author Name  <e-mail Author>**
+*Who made a commit and e-mail*
+**Date:   Thu May 11 15:47:06 2023 -0300**
+*Timestamp anda UTC*
 
-    Create file.txt                                                                          -- Title commit    
+   **Create file.txt**
+   *Title commit*
 
-    Creating a file with primary information with a link to the documentation and some infor -- Description commit 
+   **Creating a file with primary information with a link to the documentation and some infor** 
+   *Description commit* 
 
--- git push - Send the commited operations to repository in internet 
+Send the commited operations to repository in internet 
+```bash
 git push origin main
-
--- git branch - Change the name "master" of branch to "main" 
+```
+Change the name "master" of branch to "main" 
+```bash
 git branch -M main
-
--- git remote - Link a local git repository directory to a remote repository
+```
+Link a local git repository directory to a remote repository
+```bash
 git remote add origim <URL>
-
-
--- git branch - It show all branchs in repository and what branch is 
+```
+It show all branchs in repository and what branch is 
+```bash
 git branch
-
--- git branch - It create a new branch called NewBranch from main branch 
+```
+It create a new branch called NewBranch from main branch 
+```bash
 git branch NewBranch
+```
 
--- git checkout - It Access the new branch recently created 
+It Access the new branch recently created 
+```bash
 git checkout NewBranch
+```
 
 -- git merge - it permit to merge the update of one branch to another 
-
-
+```bash
+```
