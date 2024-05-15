@@ -5,12 +5,12 @@
 
 ## After intall Git there is some commands to run.  
 
->[!IMPORTANT]
+>[!NOTE]
 >
 >These commands prepare your recently installed git to run in Windows
 
 
-## On Git Bash - Set name and e-mail 
+### On Git Bash - Set name and e-mail 
 
 ```bash
 git config --global user.name "Your Name"
@@ -22,50 +22,74 @@ git config --global user.ema "Your E-mail"
 
 
 
-## On Visual Studio Code
+### On Visual Studio Code
 
 If you want to make explicit the GIT command interpreter as default in VSCode, do the following procedure
 
-Access the "File" menu --> "Preferences" --> "Settings"
-Click "Open Settings (JASON)" in the upper right corner and add the following lines in the settings.json file:
+Access the "**File**" menu 
+--> "**Preferences**" 
+--> "**Settings**"
 
+Click "**Open Settings (JASON)**" in the upper right corner near "..." and add the following lines in the settings.json file:
+
+```json
 "terminal.integrated.defaultProfile.windows": "Git Bash",
 "terminal.integrated.tabs.enabled": true,
+```
 
--- When you click on the terminal, the "Git Bash" interpreter will open
+When you click on the terminal, the "Git Bash" interpreter will open
+
+>[!CAUTION]
+>
+>This action will replace your PowerShell shell interpreter with Git Bash - make sure you want to do this
 
 
--- Follow some GIT commands 
 
--- git init - Initializes a new empty repository or reinitialize an existing one
+## Follow some GIT commands 
+
+Initializes a new empty repository or reinitialize an existing one
+
+Initialize empty
+```bash
+git init 
+```
+Reinitialize
+```bash
 git init (name of repositoty) 
+```
 
--- git clone - Clone/copy an existing repository
+Clone/copy an existing repository
+```bash
 git clone (url)
+```
 
--- git status - It show information about staging area (Remember that the staging area is a place between the work area and the area that the repository is saved)
+Show information about staging area (Remember that the staging area is a place between the work area and the area that the repository is saved)
+```bash
 git status 
+```
+On branch main                                                            *Local* 
+Your branch is up to date with 'origin/main'.                             *It inform that occurred updates in branch main*
 
-On branch main                                                            -- Local 
-Your branch is up to date with 'origin/main'.                             -- It inform that occurred updates in branch main
+Changes not staged for commit:                                            *Info about update that not in staging area yeat  
+  (use "git add <file>..." to update what will be committed)              *Suggestion about what that can be made with git commands in case was a file added* 
+  (use "git restore <file>..." to discard changes in working directory)   *Suggestion about what that can be made with git commands in case should discard updates*
+        modified:   directory1/file1.txt                                  *List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case* 
 
-Changes not staged for commit:                                            -- Info about update that not in staging area yeat  
-  (use "git add <file>..." to update what will be committed)              -- Suggestion about what that can be made with git commands in case was a file added 
-  (use "git restore <file>..." to discard changes in working directory)   -- Suggestion about what that can be made with git commands in case should discard updates
-        modified:   directory1/file1.txt                                     -- List of updates - Item 1 of list, the file file1.txt on directory1 was updated in this case 
+Untracked files:                                                          *List of items added in repository that was made but not add in staging area yeat*   
+  (use "git add <file>..." to include in what will be committed)          *Info that suggest what should have make with this updates, that is, Should be added in the staging area*
+        directory1/test1.txt                                              *It show that was create a file called teste1.txt inside a directory called directory1*   
+        test2.txt                                                         *It show that was create a file called test2.txt in a branch main*
 
-Untracked files:                                                          -- List of items added in repository that was made but not add in staging area yeat   
-  (use "git add <file>..." to include in what will be committed)          -- Info that suggest what should have make with this updates, that is, Should be added in the staging area
-        directory1/test1.txt                                              -- It show that was create a file called teste1.txt inside a directory called directory1   
-        test2.txt                                                         -- It show that was create a file called test2.txt in a branch main
+no changes added to commit (use "git add" and/or "git commit -a")         *It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated*
 
-no changes added to commit (use "git add" and/or "git commit -a")         -- It show that the added files not is prepared to commit yeat because not was runned git add command in these files, and sugest to run a git commit for files in exists in repository that was updated
-
--- git add - Add a file to the staging area
+Add a file to the staging area
+```bash
 git add (name off file)
-
--- git add - Add all update was made or something that was add in all work/index area 
-git add . 
+```
+Add all update was made or something that was add in all work/index area 
+```bash
+git add .
+```
 
 -- git status "after git add" - In git status case above, after run "git add directory 1/test1.txt" and "git add test2.txt" or "git add ." , if run git status again will be show this way
 
