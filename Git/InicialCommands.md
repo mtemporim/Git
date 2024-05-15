@@ -28,18 +28,13 @@ Click "**Open Settings (JASON)**" in the upper right corner near "..." and add t
 "terminal.integrated.defaultProfile.windows": "Git Bash",
 "terminal.integrated.tabs.enabled": true,
 ```
-
-When you click on the terminal, the "Git Bash" interpreter will open
+When you click on the terminal, the "Git Bash" interpreter will open  
 
 >[!CAUTION]
 >
->This action will replace your PowerShell shell interpreter with Git Bash - make sure you want to do this
-
-
-
+>This action will replace your PowerShell shell interpreter with Git Bash - make sure you want to do this  
 
 ## Follow some GIT commands 
-
 **git init** - Initializes a new empty repository or reinitialize an existing one
 Initialize empty
 ```bash
