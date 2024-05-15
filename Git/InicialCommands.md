@@ -66,7 +66,9 @@ Show information about staging area (Remember that the staging area is a place b
 git status 
 ```
 **On branch main**
+
 *Local* 
+
 **Your branch is up to date with 'origin/main'.**
 *It inform that occurred updates in branch main*
 
@@ -171,8 +173,4 @@ git branch NewBranch
 It Access the new branch recently created 
 ```bash
 git checkout NewBranch
-```
-
-git merge - it permit to merge the update of one branch to another 
-```bash
 ```
