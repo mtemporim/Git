@@ -99,7 +99,7 @@ git commit
 ```bash
 git log
 ```
-Example
+Example  
 **commit 9547a3rfc5kjh345gf47125f146c85a093ef8e4b (HEAD -> main, origin/main, origin/HEAD)**     *--Commit code and the place in repository where the commit occured*  
 **Author: Author Name  <e-mail Author>**     *--Who made a commit and e-mail*  
 **Date:   Thu May 11 15:47:06 2023 -0300**     *--Timestamp and UTC*  
