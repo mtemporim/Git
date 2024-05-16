@@ -46,7 +46,7 @@ Store temporarily a credential token in local machine
 ```bash
 git config --global credential.helper cache 
 ```
-Show type of store type of credential 
+Show type of store of credential  
 ```bash
 git config --global  credential.helper 
 ```
