@@ -38,3 +38,19 @@ Show all configurations
 ```bash
 git config --global --list 
 ```
+Store permanently a credential token in local machine
+```bash
+git config --global credential.helper store 
+```
+Store temporarily a credential token in local machine
+```bash
+git config --global credential.helper cache 
+```
+Show type of store type of credential 
+```bash
+git config --global  credential.helper 
+```
+Show directory where is the store file configuration 
+```bash
+git config --global --show-origin  credential.helper
+```
