@@ -4,6 +4,8 @@
 
 
 **git config** - Show options of git config commands  
+ 
+ 
  I write a fews words about 3 main option  
  **--global**  Contain the configuration of all user  
  **--system**  Contain the configuration of Git system  
