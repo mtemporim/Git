@@ -54,5 +54,3 @@ Show directory where is the store file configuration
 ```bash
 git config --global --show-origin  credential.helper
 ```
-
-fsdf
